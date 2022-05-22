@@ -118,9 +118,6 @@ function contact(photogapherName) {
             } else if (value.length > 0 && (value.length < 4 || value.length > 500)) {
                 errorDisplay(tag, "Veuillez entrer entre 4 et 500 caractères ");
 
-            } else if (!value.match(/^[a-zA-Z0-9_.-]*$/)) {
-                errorDisplay(tag, "Le message n'est pas valide");
-
             } else {
                 errorDisplay(tag, "", true);
                 return true;
