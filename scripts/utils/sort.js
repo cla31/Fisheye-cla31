@@ -50,6 +50,7 @@ function sortByLikes() {
     try {
         const result = fullMedias.sort((a, b) => {
             if (a.likes > b.likes) {
+                // console.log("a.likes et b.likes", a.likes, b.likes);
                 return -1;
             } else if (a.likes < b.likes) {
                 return 1;
@@ -57,7 +58,7 @@ function sortByLikes() {
                 return 0;
             };
         });
-        // console.log("Result au clic", result);
+        console.log("Result au clic", result);
         return displayMedias(result);
 
     } catch (erreur) {

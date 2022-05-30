@@ -27,11 +27,18 @@ aside {
         outline: 2px solid black;
         border-radius: 5px;
     }
+    @media screen and (max-width: 768px) {
+        font-size: 23px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        font-size: 35px;
+    }
 }
 
 #contact_modal .contentModal {
     border-radius: 5px;
     background-color: #db8876;
+    // background-color: aqua;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -40,9 +47,17 @@ aside {
     left: 25%;
     padding: 35px 35px 35px;
     margin: 0 auto;
+    @media screen and (max-width: 768px) {
+        width: 230px;
+        padding: 15px 15px 15px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        width: 320px;
+    }
 }
 
 #contact_modal #headerModal {
+    // background-color: aqua;
     margin: 0 0 20px 0;
     padding: 0;
 }
@@ -79,6 +94,12 @@ form {
     line-height: 1.5em;
     margin: 0px;
     padding: 0px;
+    @media screen and (max-width: 768px) {
+        font-size: 1em;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        font-size: 1.25em;
+    }
 }
 
 label {
@@ -107,11 +128,16 @@ label {
 
 #contact_modal input,
 #contact_modal textarea {
-    // color: black;
     font-size: 1.8em;
     line-height: 1.5em;
     margin: 0px;
     padding: 0px;
+    @media screen and (max-width: 768px) {
+        font-size: 0.57em;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        font-size: 0.90em;
+    }
 }
 
 button,
@@ -124,9 +150,24 @@ input,
 select,
 textarea {
     font-family: inherit;
-    font-size: 100%;
+    // font-size: 100%;
     line-height: 1.15;
     margin: 0;
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
+    }
+}
+
+input::placeholder {
+    @media screen and (max-width: 768px) {
+        padding-left: 5px;
+    }
+}
+
+textarea::placeholder {
+    @media screen and (max-width: 768px) {
+        padding-left: 5px;
+    }
 }
 
 #contact_modal .crossCloseModal {
@@ -141,6 +182,10 @@ textarea {
     &:focus {
         outline: 2px solid black;
         border-radius: 5px;
+    }
+    @media screen and (max-width: 768px) {
+        top: 10px;
+        right: 10px;
     }
 }
 
@@ -159,5 +204,8 @@ textarea {
         border-radius: 5px;
         background-color: #db8876;
         color: black
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 1em;
     }
 }
